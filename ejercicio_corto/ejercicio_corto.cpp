@@ -1,16 +1,20 @@
+//Se incluyen las librerias
 #include <iostream>
 using namespace std;
 
 int main()
 {
+    //Declaracion de variables
     string option1;
     int age = 0, option2;
     double saldo = 1000, precio = 0, restante = 0, faltante = 0, descuento = 0;
 
+    //Datos de entrada
     cout << "BIENVENIDO A NUESTRA TIENDA. \n";
     cout << "Para comenzar, por favor ingresa tu edad: ";
     cin >> age;
 
+    //Validacion de la edad
     if (age < 16)
     {
         cout << "Lo siento pero no puedes continuar con tu compra.";
@@ -24,6 +28,7 @@ int main()
         cout << "Ingrese el tipo de usuario: ";
         cin >> option1;
 
+        //Validadcion del tipo de usuario
         if (option1 == "Estudiante" || option1 == "estudiante")
         {
             cout << "ESTUDIANTE. Dispositivos disponibles (Descuento del 20%): \n";
@@ -38,27 +43,27 @@ int main()
             {
             case 1:
                 precio = 900;
-                cout << "Producto seleccionado: Laptop Básica: $900 \n";
-                cout << "Tu saldo: $1000";
+                cout << "Producto seleccionado: Laptop Basica: $900\n";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
 
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Laptop Básica \n Dinero faltante: $" << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero.\n Dispositivo: Laptop Basica\n Dinero faltante: $" << faltante;
                 }
                 else
                 {
                     descuento = precio - (precio * 0.20);
                     restante = saldo - descuento;
                     cout << "Compra exitosa!" << endl;
-                    cout << "Dispositivo comprado: Laptop Básica" << endl;
+                    cout << "Dispositivo comprado: Laptop Basica" << endl;
                     cout << "Dinero restante: $" << restante;
                 }
                 break;
             case 2:
                 precio = 600;
                 cout << "Producto seleccionado: Tablet Estudiantil: $600 ";
-                cout << "Tu saldo: $1000";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
                     faltante = saldo - precio;
@@ -76,11 +81,11 @@ int main()
             case 3:
                 precio = 700;
                 cout << "Producto seleccionado: Chromebook: $700 ";
-                cout << "Tu saldo: $1000";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Chromebook \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero.\n Dispositivo: Chromebook\n Dinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -101,7 +106,7 @@ int main()
             cout << "PROFESIONALES. Dispositivos disponibles (Descuento del 10%): \n";
             cout << "1. Laptop Avanzada: $1500 \n";
             cout << "2. Tablet Pro: $1200 \n";
-            cout << "3. Estación de Trabajo: $2000 \n";
+            cout << "3. Estacion de Trabajo: $2000 \n";
             cout << "Seleccione un dispositivo: ";
             cin >> option2;
 
@@ -116,7 +121,7 @@ int main()
                 {
 
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Laptop Avanzada \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero.\nDispositivo: Laptop Avanzada\nDinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -130,11 +135,11 @@ int main()
             case 2:
                 precio = 1200;
                 cout << "Producto seleccionado: Tablet Pro: $1200 ";
-                cout << "Tu saldo: $1000";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Tablet Pro \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero.\nDispositivo: Tablet Pro\nDinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -148,11 +153,11 @@ int main()
             case 3:
                 precio = 2000;
                 cout << "Producto seleccionado: Estación de Trabajo: $2000 ";
-                cout << "Tu saldo: $1000";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Estación de Trabajo \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero.\nDispositivo: Estacion de Trabajo\nDinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -176,7 +181,7 @@ int main()
             cout << "3. Chromebook: $700 \n";
             cout << "4. Laptop Avanzada: $1500 \n";
             cout << "5. Tablet Pro: $1200 \n";
-            cout << "6. Estación de Trabajo: $2000 \n";
+            cout << "6. Estacion de Trabajo: $2000 \n";
             cout << "Seleccione un dispositivo: ";
             cin >> option2;
 
@@ -184,13 +189,13 @@ int main()
             {
             case 1:
                 precio = 900;
-                cout << "Producto seleccionado: Laptop Básica: $900 \n";
-                cout << "Tu saldo: $1000";
+                cout << "Producto seleccionado: Laptop Basica: $900 \n";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
 
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Laptop Básica \n Dinero faltante: $" << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero.\nDispositivo: Laptop Basica\nDinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -204,11 +209,11 @@ int main()
             case 2:
                 precio = 600;
                 cout << "Producto seleccionado: Tablet Estudiantil: $600 ";
-                cout << "Tu saldo: $1000";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Tablet Estudiantil \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero.\nDispositivo: Tablet Estudiantil\nDinero faltante: " << faltante;
                 }
                 else
                 {
@@ -222,11 +227,11 @@ int main()
             case 3:
                 precio = 700;
                 cout << "Producto seleccionado: Chromebook: $700 ";
-                cout << "Tu saldo: $1000";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Chromebook \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero.\nDispositivo: Chromebook\nDinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -245,7 +250,7 @@ int main()
                 {
 
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Laptop Avanzada \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Laptop Avanzada \n Dinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -263,7 +268,7 @@ int main()
                 if (precio > saldo)
                 {
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Tablet Pro \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero. \nDispositivo: Tablet Pro \nDinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -277,11 +282,11 @@ int main()
             case 6:
                 precio = 2000;
                 cout << "Producto seleccionado: Estación de Trabajo: $2000 ";
-                cout << "Tu saldo: $1000";
+                cout << "Tu saldo: $1000" << endl;
                 if (precio > saldo)
                 {
                     faltante = saldo - precio;
-                    cout << "Lo siento pero no tienes suficiente dinero. \n Dispositivo: Estación de Trabajo \n Dinero faltante: " << faltante;
+                    cout << "Lo siento pero no tienes suficiente dinero. \nDispositivo: Estación de Trabajo \nDinero faltante: $" << faltante;
                 }
                 else
                 {
@@ -302,6 +307,7 @@ int main()
             cout << "Por favor intentalo nuevamente. La categoria no existe.";
         }
 
+        //Finaliza el programa.
         return 0;
     }
 }
